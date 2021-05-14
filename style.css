@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+:root {
+   --primaryColor: #cc005f;
+}
+body {
+   margin: 0;
+   padding: 0;
+   font-family: "Poppins", sans-serif;
+}
+
+html {
+   font-size: 16px;
+}
+h1,
+h2,
+h3.h4,
+h5,
+p,
+h6,.row {
+   margin: 0;
+   padding: 0;
+}
+.navigation {
+   width: 25vw;
+   background-color: black;
+   position: fixed;
+   z-index: 2;
+   left: 20%;
+}
+.nav_header {
+   width: 100%;
+   font-family: "Potta", sans-serif !important;
+}
+.nav_header i {
+   color: var(--primaryColor);
+   font-size: 2rem;
+   cursor: pointer;
+}
+.nav_header a {
+   text-decoration: none;
+   font-family: "Potta One", cursive;
+   font-size: 1.8rem;
+}
+.navigation .nav_body {
+   overflow: hidden;
+   position: relative;
+}
+.navigation ul {
+   list-style: none;
+   padding-left: 0;
+   transition: all 1s;
+}
+.nav_close {
+   margin-top: -17rem;
+}
+.nav_open {
+   margin-top: 0;
+}
+.navigation ul li {
+   transition: all 0.5s;
+}
+.navigation ul li a {
+   font-size: 1.3rem;
+   text-decoration: none;
+   transition: all 0.5s;
+}
+.navigation ul li > a:hover {
+   margin-left: 1.4rem;
+   color: var(--primaryColor) !important;
+}
+#nav_closeIcon {
+   display: none;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/intro-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.header h3{
+    color: var(--primaryColor);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.header hr{
+    width: 2px ;
+    border: 0;
+    height: 2rem;
+    background-color: #fff;
+}
+.my_btn{
+    width: 70% !important;
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+h1{
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.about_section{
+    width: 100%;
+    background-color: #B5B9BA;
+}
+.my_img{
+    width: 70%;
+    border-radius: 100%;
+}
+.about_section h2,.projects_section h2, #contact_h2,.contact_section h2,.skill_h2,.skills_section h2{
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--primaryColor);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.about_section h3{
+    font-size: 2rem;
+    font-weight: 400;
+    color: #4D4A4A;
+}
+.skill_img{
+   width: 100%;
+   height: 100%;
+   position: relative;
+}
+.animated_img{
+   min-width: 50%;
+   animation: ImageAnimation 3s  infinite forwards;
+}
+@keyframes ImageAnimation{
+   0%{
+      width: 50%;
+   }
+   50%{
+      width:52% ;
+   }
+   100%{
+      width: 50%;
+   }
+}
+
+.projects_section{
+   background-color:#B5B9BA;
+}
+.projects_section button{
+   border: 2px solid #fff;
+   background: none;
+}
+.form_section{
+   width: 60%;
+   min-width: 40vw !important;
+   margin: 0 auto;
+}
+
+.contact_section{
+   width: 100%;
+   background-color:#4D4A4A ;
+}
+form input, form textarea{
+   border: 0 !important;
+   border-bottom: 2px solid gray !important;
+   background: none !important;
+   outline: none !important;
+   color: var(--primaryColor) !important;
+   box-shadow: unset !important;
+}
+form input:hover,form textarea:hover{
+   border-bottom-color: var(--primaryColor) !important;
+}
+form input:focus,form textarea:focus{
+   border-bottom-color: var(--primaryColor) !important;
+}
+form button{
+   border: 2px solid var(--primaryColor) !important;
+   color: var(--primaryColor) !important;
+}
+form button:hover{
+   background-color: var(--primaryColor) !important;
+   color: #B5B9BA !important;
+}
+.contact_section h2{
+   font-size: 1.9rem;
+   letter-spacing: unset;
+}
+.contact_section i{
+   font-size: 2rem;
+}
+.footer{
+   width: 100%;
+   background-color: #4D4A4A;
+}
+.footer p{
+   color: gray;
+   font-size: 1.3rem;
+}
+.footer i{
+   font-size: 1.7rem;
+}
+@media only screen and (max-width:376px){
+   .navigation{
+      width: 100vw;
+      left: 0;
+   }
+   .contact_section h2{
+      font-size: 1.3rem;
+   }
+   .footer p{
+      font-size: 1rem;
+   }
+   .skills_section h2{
+      font-weight: 600;
+      font-size: 1.2rem;
+   }
+}
+@media only screen and (max-width:769px){
+   .navigation{
+      width: 100vw;
+      left: 0;
+   }
+   .contact_section h2{
+      font-size: 1.3rem;
+   }
+   .footer p{
+      font-size: 1rem;
+   }
+   .skills_section h2{
+      font-weight: 600;
+      font-size: 1.2rem;
+   }
+}
+@media only screen and (max-width:426px){
+   .navigation{
+      width: 100vw;
+      left: 0;
+   }
+   .contact_section h2{
+      font-size: 1.3rem;
+   }
+   .footer p{
+      font-size: 1rem;
+   }
+   .skills_section h2{
+      font-size: 1.2rem;
+      font-weight: 600;
+   }
+}
